@@ -21,6 +21,7 @@
   li { margin: 6px 0; }
   figure { margin: 24px 0; }
   figure img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; display: block; }
+  figure.phone { max-width: 320px; }
   figcaption { color: var(--muted); font-size: 0.9rem; margin-top: 6px; }
   .note { border-left: 3px solid var(--line); padding: 4px 0 4px 12px; color: var(--muted); font-size: 0.95rem; }
   footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
@@ -51,23 +52,51 @@
   </ul>
 
   <h2>Screenshots</h2>
-  <p class="note">These use made-up sample data: every company name, price and figure below is invented for testing. No real supplier, price or sale is shown.</p>
+  <p class="note">These use made-up sample data: every company name, price and figure below is invented for testing. No real supplier, price or sale is shown. They follow the buying chain in order, from finding wholesalers to what sold.</p>
 
   <figure>
-    <img src="img/today.png" alt="The Today page: what needs attention, sorted into Fix now, Needs you and When you can, beside the seven steps of the buying chain.">
-    <figcaption>Today: what needs me, and where each step of the chain stands, from finding wholesalers to the next order.</figcaption>
+    <img src="img/01-today.png" alt="The Today page in dark mode: a to-do list sorted into Fix now, Needs you and When you can, beside the seven steps of the buying chain with a count on each." loading="lazy">
+    <figcaption>Today: what needs me, sorted by urgency, and where each step of the chain stands. Problems such as an unproven backup show up here first.</figcaption>
   </figure>
   <figure>
-    <img src="img/targets.png" alt="The Targets page: a wholesaler sighted in a trade directory, with six checks marked passed.">
-    <figcaption>Targets: wholesalers found in trade directories, each checked on six points (sign-up, Amazon sellers, minimum order, sector, UK stock, brands) before I decide to approach them.</figcaption>
+    <img src="img/02-targets.png" alt="The Targets page: a wholesaler found in a trade directory, with six checks marked passed and a choice to apply or skip." loading="lazy">
+    <figcaption>Find: wholesalers found in trade directories, each checked on six points (sign-up, Amazon sellers, minimum order, sector, UK stock, brands) before I decide to approach them.</figcaption>
   </figure>
   <figure>
-    <img src="img/line.png" alt="One price list line matched to its Amazon listing: profit per unit after every fee, and the buying rule passing four of four checks.">
-    <figcaption>One price list line matched to its Amazon listing: profit per unit after every Amazon fee and VAT, the buying rule's verdict, and how much to reorder.</figcaption>
+    <img src="img/03-messages.png" alt="The Messages page: an inbox of supplier replies on the left, and one reply opened on the right with labels to tick and a reply to draft." loading="lazy">
+    <figcaption>Approach: supplier emails read in one place. I label each reply (account open, price list sent, declined…) and the app drafts the next message, which I send.</figcaption>
   </figure>
   <figure>
-    <img src="img/offers.png" alt="The Offers page: live offers with the floor and ceiling prices for Amazon's automated pricing.">
-    <figcaption>Offers: the floor and ceiling price for each live offer, so Amazon's automated pricing never sells below the least profit.</figcaption>
+    <img src="img/04-company.png" alt="A supplier's page: where the account stands, its price lists, its buy list, its orders, contacts and trading terms." loading="lazy">
+    <figcaption>Account: everything about one supplier on one page: where the account stands and the next step, its price lists, what's worth buying, past orders and terms.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/05-price-list.png" alt="One imported price list: which column each fact was read from, and sample lines to check the cost per unit." loading="lazy">
+    <figcaption>Price list: each supplier's spreadsheet is read, and I confirm which column holds the barcode, cost and pack size before any line can be bought.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/06-line.png" alt="One price list line matched to its Amazon listing: profit per unit after every fee, the buying rule passing four of four checks, reorder quantity and sellability." loading="lazy">
+    <figcaption>Match and judge: one line matched to its Amazon listing, with profit per unit after every Amazon fee and VAT, the buying rule's verdict and how much to reorder.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/07-buy-list.png" alt="The Buy page: lines that pass the buying rule, with cost, Buy Box price, profit, return on investment and monthly sales." loading="lazy">
+    <figcaption>Buy: every line that passes the buying rule, ranked by profit a month. Failed data reads are shown at the top rather than hidden.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/08-basket.png" alt="A basket for one supplier: proposed quantities from demand and stock held, cash out against the budget, and the order to place." loading="lazy">
+    <figcaption>Basket: quantities proposed from demand and stock already held, kept within the order budget. The app sends no order and pays nothing; I place it and record it.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/09-offers.png" alt="The Offers page: live offers with the floor and ceiling prices for Amazon's automated pricing." loading="lazy">
+    <figcaption>Sell: the floor and ceiling price for each offer, so Amazon's automated pricing never sells below the least profit.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/10-sales.png" alt="The Sales page: each Amazon sale with units, price, status and profit earned, and returns under their sale." loading="lazy">
+    <figcaption>Sales: every Amazon sale with the profit it earned once fees are in, and each return or refund under its sale.</figcaption>
+  </figure>
+  <figure class="phone">
+    <img src="img/11-phone.png" alt="The Today page on a phone: the same figures and to-do list in one column, with tabs at the bottom." loading="lazy">
+    <figcaption>The same app on a phone, reached privately over my own network.</figcaption>
   </figure>
 
   <footer>The tool's code is private. Contact details are on my CV.</footer>
