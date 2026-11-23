@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reach</title>
+<meta name="description" content="Reach: a wholesale sourcing and buying tool for Amazon FBA, planned by Hussein Darwich and built by directing AI coding agents.">
+<style>
+  :root { --ink: #1f2328; --muted: #57606a; --line: #d0d7de; --bg: #ffffff; --accent: #1b4d4a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e6edf3; --muted: #9da7b1; --line: #30363d; --bg: #0d1117; --accent: #7cc4bd; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 32px; }
+  h2 { font-size: 1.25rem; margin: 40px 0 8px; color: var(--accent); }
+  ul { padding-left: 1.2em; }
+  li { margin: 6px 0; }
+  figure { margin: 24px 0; }
+  figure img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; display: block; }
+  figcaption { color: var(--muted); font-size: 0.9rem; margin-top: 6px; }
+  .note { border-left: 3px solid var(--line); padding: 4px 0 4px 12px; color: var(--muted); font-size: 0.95rem; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Reach</h1>
+  <p class="sub">A wholesale sourcing and buying tool for Amazon FBA. A personal project by Hussein Darwich, October 2026 to the present.</p>
+
+  <h2>What it does</h2>
+  <p>Reach runs the buying side of a small Amazon FBA resale business, step by step: it finds UK wholesalers worth approaching, helps open trade accounts with them, reads their price lists, matches each line to its Amazon listing, judges whether the line is worth buying, and follows the order through to stock at Amazon and what it sold.</p>
+  <p>I planned and specified it, then built it by directing AI coding agents. Every supplier email, order and Amazon change waits for my sign-off: it never acts on its own.</p>
+
+  <h2>Results so far</h2>
+  <ul>
+    <li>Found the UK wholesalers behind 7,800 brands sold on Amazon, contacted 43 and opened talks with the 20 who replied.</li>
+    <li>Matched 44 supplier price lists (34,000 lines) to Amazon listings by barcode, and set the buying rule that judges each line on fees, competition and margin.</li>
+    <li>Took the first product from supplier price list to a live FBA offer in November 2026, with daily price and stock checks.</li>
+  </ul>
+
+  <h2>How I built it</h2>
+  <ul>
+    <li><strong>Planned first.</strong> I wrote down, in plain English, what each step of the business should do and the words it uses, and ranked what "good" means for the tool (first safe: nothing is spent or sent without my say-so; then correct figures; speed comes near the end).</li>
+    <li><strong>Small, written tasks.</strong> Each change began as a short written task with its goal and how we would know it worked. AI coding agents built each one, with automated tests, and a separate review checked the work against the task.</li>
+    <li><strong>Tried before it goes live.</strong> Each change is checked on a test copy with sample data first; only then is it released to the live copy that runs the business.</li>
+    <li><strong>Measured.</strong> A weekly review looks at what the tool did and what broke, and the next tasks come from that.</li>
+  </ul>
+
+  <h2>Screenshots</h2>
+  <p class="note">These use made-up sample data: every company name, price and figure below is invented for testing. No real supplier, price or sale is shown.</p>
+
+  <figure>
+    <img src="img/today.png" alt="The Today page: what needs attention, sorted into Fix now, Needs you and When you can, beside the seven steps of the buying chain.">
+    <figcaption>Today: what needs me, and where each step of the chain stands, from finding wholesalers to the next order.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/targets.png" alt="The Targets page: a wholesaler sighted in a trade directory, with six checks marked passed.">
+    <figcaption>Targets: wholesalers found in trade directories, each checked on six points (sign-up, Amazon sellers, minimum order, sector, UK stock, brands) before I decide to approach them.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/line.png" alt="One price list line matched to its Amazon listing: profit per unit after every fee, and the buying rule passing four of four checks.">
+    <figcaption>One price list line matched to its Amazon listing: profit per unit after every Amazon fee and VAT, the buying rule's verdict, and how much to reorder.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/offers.png" alt="The Offers page: live offers with the floor and ceiling prices for Amazon's automated pricing.">
+    <figcaption>Offers: the floor and ceiling price for each live offer, so Amazon's automated pricing never sells below the least profit.</figcaption>
+  </figure>
+
+  <footer>The tool's code is private. Contact details are on my CV.</footer>
+</main>
+</body>
+</html>
